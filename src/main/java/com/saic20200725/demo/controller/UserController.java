@@ -19,4 +19,11 @@ public class UserController {
         System.out.println(res);
         return res;
     }
+
+    @RequestMapping("/add")
+    public String add(@RequestParam("username") String username,@RequestParam("password") String password){
+
+        String res="username"+username+","+"password"+password;
+        return  res;
+    }
 }
