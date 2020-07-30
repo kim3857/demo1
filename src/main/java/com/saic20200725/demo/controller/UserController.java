@@ -26,4 +26,8 @@ public class UserController {
         String res="username"+username+","+"password"+password;
         return  res;
     }
+    @RequestMapping("/do-add")
+    public String addAll(){
+        return "hello world !";
+    }
 }
